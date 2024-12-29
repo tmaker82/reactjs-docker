@@ -3,7 +3,7 @@ services:
   # Контейнер с Node.js
   src:
     build:
-      context: ./app
+      context: ./src
     tty: true
     working_dir: /opt/server
     volumes:
