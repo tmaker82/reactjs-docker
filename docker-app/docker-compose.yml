@@ -1,0 +1,12 @@
+
+services:
+  # Контейнер с Node.js
+  src:
+    build:
+      context: ./app
+    tty: true
+    working_dir: /opt/server
+    volumes:
+      - ./src:/opt/server
+    expose:
+      - '3000'
