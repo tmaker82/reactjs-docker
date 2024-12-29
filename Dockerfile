@@ -8,6 +8,6 @@ COPY package.json ./
 COPY package-lock.json ./
 RUN npm install
 
-COPY . ./
+COPY docker-app ./
 
 CMD ["npm", "start"]
