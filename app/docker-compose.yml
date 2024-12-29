@@ -3,10 +3,10 @@ services:
   # Контейнер с Node.js
   src:
     build:
-      context: ./src
+      context: src
     tty: true
-    working_dir: /opt/server
+    working_dir: /opt/react-app
     volumes:
-      - ./src:/opt/server
+      - ./src:/opt/react-app
     expose:
       - '3000'
