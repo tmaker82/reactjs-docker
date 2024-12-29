@@ -1,19 +1,6 @@
-version: "3"
 services:
-  api:
-    build: ./api
-    ports:
-      - "8080:8080"
-    depends_on:
-      - db
-    container_name: blog-api
   client:
     build: ./client
     ports:
       - "80:80"
     container_name: blog-client
-  db:
-    image: mongo
-    ports:
-      - "27017:27017"
-    container_name: blog-db
