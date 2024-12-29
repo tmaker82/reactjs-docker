@@ -2,5 +2,5 @@ services:
   client:
     build: ./client
     ports:
-      - "80:80"
+      - "6080:80"
     container_name: blog-client
